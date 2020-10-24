@@ -20,8 +20,19 @@
       </ul>
     </header>
     <div class="c-list-db">
-      <h1>Error 404 no se encontró la pagina.</h1>
-      <h1><a href="/home">Home</a></h1>
+      <h2 class="title-db">Listado de docentes </h2>
+      <div class="c-list-docentes">
+        <h2>Nombre del Docente</h2>
+        <h2>Código</h2>
+        <h2>Especialidad</h2>
+        <h2>Sueldo</h2>{% for docente in docentes %}
+<p>{{ docente[2] }}</p>
+<p>{{ docente[1] }}</p>
+<p>{{ docente[3] }}</p>
+<p>{{ docente[4] }} Bs.</p>
+{% endfor %}
+
+      </div>
     </div>
   </body>
 </html>

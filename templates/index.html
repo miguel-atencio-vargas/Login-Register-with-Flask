@@ -1,23 +1,41 @@
-
-
-<h3>Bienvenido {{alumnos[0][1]}} usted ha iniciado sesion con codigo de alumno {{alumnos[0][2]}}</h3>
-<table border="2px">
-    <thead>
-        <tr>
-            <td>Nombre Completo</td>
-            <td>Codigo</td>
-            <td>Carrera</td>
-            <td>Fecha de nacimiento</td>
-        </tr>
-    </thead>
-    <tbody>
-        {%for contact in alumnos%}
-            <tr>
-                <td>{{contact.1}}</td>
-                <td>{{contact.2}}</td>
-                <td>{{contact.3}}</td>
-                <td>{{contact.4}}</td>
-            </tr>
-        {%endfor%}
-    </tbody>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,900&amp;family=Source+Serif+Pro:wght@900&amp;display=swap">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Universidad Loyola de Bolivia</title>
+  </head>
+  <body>
+    <header class="c-header">
+      <h2 class="title">Universidad Loyola de Bolivia</h2>
+      <ul>
+        <li><a href="/home">Inicio</a></li>
+        <li><a href="/carreras">Carreras</a></li>
+        <li><a href="/materias">Materias</a></li>
+        <li><a href="/docentes">Docentes</a></li>
+        <li><a href="/alumnos">Alumnos</a></li>
+      </ul>
+    </header>
+    <div class="c-home">
+      <div class="c-home-intro">
+        <h1 class="title">Práctica sobre bases de datos SQL</h1>
+        <h2 class="sub-title">Gestión de Sistemas Empresariales</h2>
+        <h3 class="sub-title_text">Herramientas utilizadas:</h3>
+        <div class="c-home-intro__tools">
+          <p>Flask <img class="icon" src="{{url_for('static', filename='img/chili.png')}}"></p>
+          <p>Python <img class="icon" src="{{url_for('static', filename='img/python.png')}}"></p>
+          <p>MySQL <img class="icon" src="{{url_for('static', filename='img/mysql.png')}}"></p>
+          <p>Beekeeper <img class="icon" src="{{url_for('static', filename='img/bee.png')}}"></p>
+          <p>Anaconda <img class="icon" src="{{url_for('static', filename='img/anaconda.png')}}"></p>
+          <p>Pug <img class="icon" src="{{url_for('static', filename='img/pug.png')}}"></p>
+          <p>Stylus <img class="icon" src="{{url_for('static', filename='img/stylus.png')}}"></p>
+          <p>WebStorm <img class="icon" src="{{url_for('static', filename='img/web.png')}}"></p>
+          <p>Linux <img class="icon" src="{{url_for('static', filename='img/linux.png')}}"></p>
+        </div>
+      </div><img class="landscape" src="{{url_for('static', filename='img/sql.svg')}}">
+    </div>
+  </body>
+</html>

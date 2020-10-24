@@ -20,8 +20,17 @@
       </ul>
     </header>
     <div class="c-list-db">
-      <h1>Error 404 no se encontró la pagina.</h1>
-      <h1><a href="/home">Home</a></h1>
+      <h2 class="title-db">Listado de carreras </h2>
+      <div class="c-list-data">
+        <h2>Carrera</h2>
+        <h2>Jefe de Carrera</h2>
+        <h2>Duración</h2>{% for carrera in carreras %}
+<p><a href="carreras/{{carrera[0]}}">{{ carrera[1] }}</a></p>
+<p>{{ carrera[2] }}</p>
+<p>{{ carrera[3] }} Semestres</p>
+{% endfor %}
+
+      </div>
     </div>
   </body>
 </html>

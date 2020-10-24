@@ -1,0 +1,18 @@
+extends ./includes/layout
+block content
+    .c-home
+        .c-home-intro
+            h1.title Práctica sobre bases de datos SQL
+            h2.sub-title Gestión de Sistemas Empresariales
+            h3.sub-title_text Herramientas utilizadas:
+            .c-home-intro__tools
+                p Flask #[img.icon(src="{{url_for('static', filename='img/chili.png')}}")]
+                p Python #[img.icon(src="{{url_for('static', filename='img/python.png')}}")]
+                p MySQL #[img.icon(src="{{url_for('static', filename='img/mysql.png')}}")]
+                p Beekeeper #[img.icon(src="{{url_for('static', filename='img/bee.png')}}")]
+                p Anaconda #[img.icon(src="{{url_for('static', filename='img/anaconda.png')}}")]
+                p Pug #[img.icon(src="{{url_for('static', filename='img/pug.png')}}")]
+                p Stylus #[img.icon(src="{{url_for('static', filename='img/stylus.png')}}")]
+                p WebStorm #[img.icon(src="{{url_for('static', filename='img/web.png')}}")]
+                p Linux #[img.icon(src="{{url_for('static', filename='img/linux.png')}}")]
+        img.landscape(src="{{url_for('static', filename='img/sql.svg')}}")

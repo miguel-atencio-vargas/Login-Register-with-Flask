@@ -20,8 +20,23 @@
       </ul>
     </header>
     <div class="c-list-db">
-      <h1>Error 404 no se encontró la pagina.</h1>
-      <h1><a href="/home">Home</a></h1>
+      <h2 class="title-db">Listado de alumnos </h2>
+      <div class="c-list-alumnos">
+        <h2>Nombres</h2>
+        <h2>Apellidos</h2>
+        <h2>Código</h2>
+        <h2>Fecha de Inscripción</h2>
+        <h2>Celular</h2>
+        <h2>Fecha de Nacimiento</h2>{% for alumno in alumnos %}
+<p><a href="#">{{ alumno[0] }}</a></p>
+<p>{{alumno[1]}} {{alumno[2]}} </p>
+<p>{{alumno[3]}}</p>
+<p>{{alumno[4]}}</p>
+<p>{{alumno[5]}}</p>
+<p>{{alumno[6]}}</p>
+{% endfor %}
+
+      </div>
     </div>
   </body>
 </html>

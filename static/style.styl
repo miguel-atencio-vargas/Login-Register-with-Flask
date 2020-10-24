@@ -1,0 +1,107 @@
+*
+    margin 0
+body
+    background-color: #080024
+
+
+.c-home
+    max-width 1024px
+    margin 0 auto
+.c-header
+    background: rgb(8,0,36)
+    background: linear-gradient(90deg, rgba(8,0,36,1) 41%, rgba(222,31,31,1) 81%)
+    display flex
+    flex-direction row
+    justify-content space-between
+    & .title
+        color #ffffff
+        display inline
+        margin 1.3rem 2rem
+        font-family 'Source Serif Pro', serif
+    & ul
+        display flex
+        flex-direction row
+        list-style none
+    & li
+        padding .5rem 1rem
+        border 2px solid #1f1f1f
+        margin 1rem .5rem
+        border-radius 4px
+        &:hover
+            transition: .7s ease
+            background-color #000000
+
+    & ul li a
+        color #ffffff
+        text-decoration none
+        font-weight 600
+        font-family  'Montserrat', sans-serif
+
+
+
+.c-home
+    color white
+    margin-top 3rem
+    display flex
+    flex-direction row
+    justify-content space-around
+    & .c-home-intro
+        font-family 'Montserrat'
+        & .sub-title, .title
+            margin-bottom 1rem
+            text-align center
+        & .sub-title_text
+            margin-bottom 1rem
+        & .c-home-intro__tools
+            display grid
+            grid-template-columns 1fr 1fr 1fr
+            & p
+                border 2px solid #2f5cc6
+                border-radius 4px
+                font-size 18px
+                margin 5px
+                padding .4rem .5rem
+                text-align center
+                & img
+                    width 30px
+                    vertical-align middle
+    & .landscape
+        max-width 400px
+
+.c-list-db
+	max-width 1024px
+	margin 0 auto
+	color: white
+	font-family: 'Montserrat'
+	& .title-db
+		text-align: center
+		margin: 3rem
+	& .c-list-data
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr
+		& p
+			font-size: 18px
+		& p a
+			text-decoration: none
+			color: white
+		& > *
+			padding: 1rem
+
+.c-list-alumnos
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
+	& p
+		font-size: 18px
+	& p a
+		text-decoration: none
+		color: white
+	& > *
+		padding: 1rem
+
+.c-list-docentes
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr 1fr
+	& p
+		font-size: 18px
+	& > *
+		padding: 1rem
